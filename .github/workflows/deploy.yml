@@ -1,4 +1,4 @@
-name: ci-cd pipeline deploy to prod
+name: ci-cd pipeline deploy to prod github_action
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
         
-    - name: Deploy to prod server
+    - name: Deploy to prod server NodeJs
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST_IP }}
