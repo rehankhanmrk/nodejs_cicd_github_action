@@ -1,4 +1,4 @@
-'''
+```
 name: Uat Environment
 on:
   push:
@@ -52,4 +52,4 @@ jobs:
           pm2 restart employer.kamelpay
           command_timeout: 300m
           timeout: 300m
-'''
+```
