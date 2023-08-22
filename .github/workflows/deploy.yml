@@ -30,7 +30,7 @@ jobs:
           source ~/.nvm/nvm.sh
           cd /home/ubuntu/nodejs-ssl-server
           git stash
-          git pull origin feature/github-action
+          git pull origin main
           npm install
           pm2 restart nodejs-ssl-server
               
